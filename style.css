@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css2?family=Jomhuria&family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --primarycolor: #ff274b;
+    --secondarycolor: #f7bcf7;
+    --lightcolor: #ffffff;
+    --bgcolor-1: #171a1c;
+    --bgcolor-2: #22282a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+section {
+    width: 100%;
+}
+
+.home {
+    min-height: 100vh;
+    background-color: var(--bgcolor-1);
+    padding: 30px 70px;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*  */
+    background-color: var(--bgcolor-1);
+    padding: 20px 70px;
+    position: fixed;
+    z-index: 999;
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: var(--lightcolor);
+    letter-spacing: 1.5px;
+}
+
+nav span {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: var(--primarycolor);
+}
+
+.mid-nav a {
+    text-decoration: none;
+    color: var(--lightcolor);
+    font-weight: 600;
+    margin-right: 30px;
+    transition: .4s;
+}
+
+.mid-nav a:hover {
+    color: var(--primarycolor);
+}
+
+button {
+    padding: 10px 35px;
+    background-color: var(--primarycolor);
+    color: var(--lightcolor);
+    font-weight: 600;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+button:hover {
+    background-color: var(--bgcolor-2);
+    border: 1px solid var(--primarycolor);
+}
+
+.intro {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.info {
+    margin-top: 138px;
+    color: var(--lightcolor)
+}
+
+.info p {
+    color: var(--secondarycolor);
+    font-weight: bold;
+    font-size: 1.2rem;
+    letter-spacing: 1.5px;
+    margin-bottom: 27px;
+}
+
+.info h2 {
+    font-size: 3rem;
+    margin: 15px 0;
+}
+
+.info h2 span {
+    font-size: 3rem;
+    color: var(--primarycolor);
+}
+
+.info h4 {
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+.info h4 span{
+    color: var(--primarycolor);
+    font-size: 1.3rem;
+}
+
+.info button {
+    margin-top: 35px;
+}
+
+.intro .icons {
+    margin-top: 60px;
+}
+
+.intro .icons img {
+    width: 40px;
+    margin-right: 20px;
+    transition: .4s;
+}
+
+.intro .icons img:hover {
+    transform: scale(1.2);
+}
+
+.intro .image img{
+    background-image: url(images/hiclipart.com.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: -36.5%;
+    right: 0;
+    height: 130%;
+}
+
+.about-me {
+    min-height: 70vh;
+    background-color: var(--bgcolor-2);
+    padding: 130px 100px 50px 100px;
+    color: var(--lightcolor);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* .about-me .image,
+.about-me .info {
+    visibility: hidden;
+} */
+
+.about-me .image img {
+    margin-top: -80px;
+    width: 280px;
+}
+
+.about-me .info {
+    margin-top: -15px;
+    width: 50%;
+}
+
+.about-me .info .job h4 {
+    margin-bottom: 15px;
+}
+
+.about-me .info .job h4 span {
+    font-size: 18px;
+}
+
+.about-me .info .job p {
+    line-height: 1.5;
+}
+
+.services {
+    padding: 130px 100px 50px 100px;
+    min-height: 70vh;
+    background-color: var(--bgcolor-1);
+}
+
+h2 {
+    color: var(--lightcolor);
+    font-size: 3rem;
+    text-align: center;
+}
+
+h2 span {
+    font-size: 3rem;
+    color: var(--primarycolor);
+}
+
+.services .cards {
+    margin-top: -5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.services .cards .card .info {
+    width: 85%;
+    background-color: var(--bgcolor-2);
+    padding: 25px;
+    line-height: 1.5;
+    border-radius: 10px;
+    text-align: center;
+    transition: .7s;
+}
+
+.services .cards .card .info:hover {
+    transform: scale(1.1);
+}
+
+.services .cards .card .info i {
+    color: var(--primarycolor);
+    font-size: 2.6rem;
+    margin-bottom: 30px;
+}
+
+.services .cards .card .info h4 {
+    margin-bottom: 10px;
+}
+
+.skills {
+    padding: 130px 100px 50px 100px;
+    min-height: 70vh;
+    background-color: var(--bgcolor-2);
+}
+
+.skills .data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.skills .imagesicons {
+    width: 50%;
+    margin-right: 20%;
+}
+
+.skills .imagesicons h2 {
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.skills .imagesicons img {
+    margin-bottom: 15px;
+    width: 75px;
+}
+
+.skills .picture img {
+    width: 320px;
+}
+
+footer {
+    padding: 20px 0 10px 0;
+    background-color: var(--bgcolor-1);
+    text-align: center;
+    line-height: 1.5;
+    color: var(--lightcolor);
+}
+
+footer h2 {
+    color: var(--lightcolor);
+    font-size: 1.5rem;
+}
+
+footer h2 span {
+    font-size: 1.5rem;
+    color: var(--primarycolor);
+}
+
+footer p {
+    margin: -10px 0 10px 0;
+
+    /* pre-line to put it in centre as you want */
+    white-space: pre-line;
+}
+
+footer h5 {
+    font-size: .9rem;
+    color: var(--primarycolor);
+}
+
+/* Mobile */
+@media (min-width: 315px) and (max-width: 659px) {
+    nav {
+        padding: 20px;
+    }
+    .logo, 
+    .logo span {
+        font-size: 1.5rem;
+    }
+    .mid-nav ul {
+        display: none;
+        width: 170px;
+        position: absolute;
+        top: 100%;
+        right: 15px;
+        background-color: var(--bgcolor-2);
+        border-radius: 10px;
+        z-index: 1;
+    }
+    .mid-nav:hover ul {
+        display: block;
+    }
+    .mid-nav ul::before {
+        content: "";
+        position: absolute;
+        border: 10px solid;
+        border-color: transparent transparent var(--bgcolor-2) transparent;
+        top: -20px;
+        right: 10px;
+    }
+    .mid-nav ul a {
+        display: block;
+        padding: 15px 20px;
+        border-bottom: 1px solid var(--lightcolor);
+        width: 100%; 
+    }
+    .mid-nav ul a:last-child {
+        border-bottom: none;
+    }
+    .mid-nav ul a:hover {
+        border-bottom-color: var(--primarycolor);
+        border-width: 50%;
+        padding-left: 35px;
+    }
+    nav button {
+        display: none;
+    }
+    .mid-nav .icon {
+        width: 30px;
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+    }
+    .mid-nav .icon span {
+        width: 100%;
+        height: 2px;
+        background-color: var(--lightcolor);
+        margin-bottom: 5px;
+    }
+    .mid-nav .icon span:nth-child(2) {
+        width: 50%;
+        transition: .3s;
+    }
+    .mid-nav:hover .icon span:nth-child(2){
+        width: 100%;
+    }
+    /* Home-section */
+    .intro .image img {
+        /* display: none; */
+        position: absolute;
+        top: 9%;
+        left: -40px;
+        height: 18%;
+    }
+    .home {
+        padding: 0 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .info p {
+        text-align: center;
+    }
+    .info h2,
+    .info h2 span {
+        font-size: 1.8rem;
+        line-height: 1.3;
+    }
+    .info h2 span {
+        display: block;
+    }
+    .info button {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .intro .icons {
+        margin-top: 30px;
+    }
+    /* About-section */
+    .about-me {
+        padding: 200px 20px 100px;
+    }
+    .about-me .image {
+        width: 100%;
+        text-align: center;
+    }
+    .about-me .image img {
+        width: 200px;
+    }
+    .about-me .info {
+        width: 100%;
+    }
+    .about-me .info h2 {
+        font-size: 3rem;
+        margin: 40px 0;
+    }
+    .about-me .info h2 span {
+        font-size: 3rem;
+        display: inline;
+    }
+    .about-me .info .job h4 {
+        text-align: center;
+    }
+    .about-me .info .job p {
+        font-size: 1rem;
+    }
+    /* Services-section */
+    .services {
+        padding: 100px 20px;
+    }
+    .services h2 {
+        margin-bottom: 50px;
+    }
+    .services .cards {
+        flex-wrap: wrap;
+    }
+    .services .cards .card .info {
+        width: 100%;
+        margin-top: 50px;
+        padding: 15px;
+    }
+    /* Skills-section */
+    .skills {
+        padding: 100px 20px;
+    }
+    .skills .imagesicons {
+        width: 100%;
+        text-align: center;
+    }
+    .skills .imagesicons h2 {
+        margin-bottom: 50px;
+    }
+    .skills .imagesicons img:not(:nth-child(2), :last-child) {
+        display: none;
+    }
+    .skills .picture img {
+        display: none;
+    }
+    footer {
+        padding: 20px 30px;
+    }
+    footer p {
+        font-size: 12px;
+    }
+    
+}
+
+/* small screen */
+
+@media (min-width: 660px) and (max-width: 991px) {
+
+}
+
+/* Medium-Screen */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Large-Screen */
+
+@media (min-width: 1200px) and (max-width: 1300px) {
+
+}
